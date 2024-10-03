@@ -1,0 +1,120 @@
+.header-bar {
+    z-index: 999;
+    background-color: rgb(237 148 170);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 90px;
+}
+
+.header-bar .line1 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.header-bar .line1 .logo-name {
+    color: #FFF;
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-bar .line1 .search-bar {
+    flex: 1;
+    width: 400px;
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px 3px;
+    border-radius: 25px;
+    border: 1px solid #e2e2e2;
+    background-color: transparent;
+}
+
+.header-bar .line1 .search-bar .search-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 80px;   
+    border-radius: 25px;   
+    cursor: pointer; 
+}
+
+.header-bar .line1 .search-bar .search-icon {
+    color: #c7c7c7;
+}
+.header-bar .line1 .search-bar .search-icon  {
+    margin-top: 2px;
+    width: 30px;
+    background-color: transparent;
+}
+
+.header-bar .line1 input {
+    color: #e2e2e2;
+    font-size: 1.1em;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px 5px 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.header-bar .line1 input::placeholder {
+    color: #e2e2e2;
+}
+
+.header-bar .line1 input {
+    outline: none;
+    box-shadow: none;
+}
+
+.category-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px 2px 5px;
+}
+
+.category-bar .category {
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    width: 30px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cart-button-wrapper {
+    position: relative;
+
+}
+.cart-button-wrapper .icon {
+    width: 35px;
+    color: #fff;
+}
+
+.cart-button-wrapper .cart-qty-badge {
+    width: 22px;
+    height: 21px;
+    border-radius: 14px;
+    background-color: #ff5722;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    text-align: center;
+    font-size: 0.8em;
+}

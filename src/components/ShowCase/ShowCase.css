@@ -1,0 +1,25 @@
+.showcase-header {
+    text-align: center;
+}
+
+.showcase-wrapper .product-list {
+    padding: 2px 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.loadbutton-wrapper {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.loadbutton-wrapper button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}

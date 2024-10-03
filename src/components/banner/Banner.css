@@ -1,0 +1,29 @@
+.banner {
+    height: 450px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-image: url('https://production.na01.natura.com/on/demandware.static/-/Sites-NatBrazil-Library/default/dwdd6fce4f/Categorias/2024/NE%20Tododia%20Cabelos/lp_banners_tododia-cabelos-linha-desk-10-09-2024.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 40px;
+}
+
+.banner h1 {
+    font-size: 3.2em;
+    color: #fff;
+
+    margin-bottom: 0;
+}
+
+.banner p {
+    margin-top: 0;
+    color: #fff;
+    font-size: 1.6em;
+}
