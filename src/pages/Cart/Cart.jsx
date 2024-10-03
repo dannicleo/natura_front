@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import ProductCartCard from '../../components/Card/ProductCartCard';
+import { useNavigate } from 'react-router-dom';
+
 import './Cart.css';
 
 const CartEmpty = () => {
@@ -15,6 +17,8 @@ const Cart = () => {
     const { cart, removeFromCart, clearCart } = useContext(CartContext);
     const [calculatedCart, setCalculatedCart] = useState()
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+    
 
     const fetchData = async () => {
         setLoading(true); 
@@ -48,6 +52,10 @@ const Cart = () => {
         return calculatedCart?.products?.map((product, i) => { 
             return <ProductCartCard key={`${product.productIdView}-${i}`} product={product}/>
         })
+    }
+    
+    const goHome = () => {
+        navigate(`/`)
     }
 
     return (
@@ -86,35 +94,13 @@ const Cart = () => {
                                 IR PARA PAGAMENTO
                             </div>
 
-                            <div className="cart-button button-exit-chart">
+                            <div 
+                                className="cart-button button-exit-chart"
+                                onClick={() => { goHome() }}
+                            >
                                 CONTINUAR COMPRANDO
                             </div>
                         </div>
-
-
-                    {/* <ul>
-                        {calculatedCart?.products?.map(item => (
-                        <li key={item.id} className="cart-item">
-                            <div>
-                            <strong>{item.name}</strong> - Quantidade: {item.quantity}
-                            <span> - Preço: R$ {parseFloat(item.price).toFixed(2)}</span>
-                            </div>
-                            <button onClick={() => handleRemove(item.id)}>Remover</button>
-                        </li>
-                        ))}
-                    </ul> */}
-                    {/* <div className="cart-summary">
-                        <h3>Total: R$ {calculatedCart?.products?.reduce((total, item) => total + parseFloat(item.price) * item.quantity, 0).toFixed(2)}</h3>
-                        <button onClick={clearCart}>Limpar Carrinho</button>
-                    </div>
-                    <div className="cart-address">
-                        <h3>Endereço</h3>
-                        <p>CEP: {calculatedCart?.address?.zip_code}</p>
-                    </div>
-                    <div className="cart-client">
-                        <h3>ID do Cliente</h3>
-                        <p>{calculatedCart?.clientId}</p>
-                    </div> */}
                 </div>
             )}
         </div>

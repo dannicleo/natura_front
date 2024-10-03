@@ -57,7 +57,7 @@ function SearchProducts(props) {
     };
 
     return (
-        <div className="showcase-wrapper">
+        <div className="showcase-search-wrapper">
             {noResults && <div className="not-found-search">
                 <h1>Você buscou por "{props.searchTerm}"</h1>
                 <h4>ops, infelizmente não encontramos nenhum resultado.</h4>
@@ -69,7 +69,7 @@ function SearchProducts(props) {
                 </ul>
             </div>}
 
-            <div className="showcase-header">
+            <div className="showcase-search-header">
                 <h2>especialmente pra você</h2>
             </div>
             

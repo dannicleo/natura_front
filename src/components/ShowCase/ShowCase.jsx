@@ -46,15 +46,12 @@ function ShowCase() {
 
     return (
         <div className="showcase-wrapper">
-
             <div className="showcase-header">
                 <h2>descubra as fragrâncias que combinam com você</h2>
             </div>
-            
             <div className="product-list">
                 {getProducts()}
             </div>
-    
             {hasMore && <div className="loadbutton-wrapper">
                 <button onClick={() => loadMore()}>Carregar outros</button>
             </div>}
