@@ -51,19 +51,21 @@ Um projeto de e-commerce desenvolvido em React, utilizando Vite como bundler, co
 ├── package.json
 └── README.md
 
+
 ## Instalação
 
 Siga os passos abaixo para configurar o projeto localmente:
 
 1. Clone o repositório:
 
-   git clone https://github.com/dannicleo/natura_front.git
-   cd ecommerce-site
+    git clone https://github.com/dannicleo/natura_front.git \n
+  
+    cd ecommerce-site
 
-2. Instale as depenências
+2. Instale as depenências \n
     npm install
 
-3. Inicie o servidor de desenvolvimento
+3. Inicie o servidor de desenvolvimento \n
     npm run dev
 
 4. Acesse a aplicação em http://localhost:5173 (ou outra porta, conforme configurado).
